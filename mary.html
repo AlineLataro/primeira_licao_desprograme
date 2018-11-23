@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Mary Keller</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Dimensiona as colunas da página, mantesndo elas responsivas */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo do body*/
+
+body {
+    font-family: "Courier New", Courier, monospace ;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Cria duas colunas iguais que se alinham lado a lado usando o float */
+.column {
+    float: left;
+    padding: 10px;
+    height: 700px; 
+}
+
+/* Coluna Lateral direita*/
+.column.side {
+    width: 25%;
+    height: 700px;
+    padding: 15px;
+}
+
+/* MColuna lateral esquerda */
+.column.middle {
+    width: 75%;
+    background-image: url("mary_bg.jpg");
+}
+
+/* Limpa os elementos flutuantes depois das colunas */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* estilo do rodapé */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Layout responsivo - faz as três colunas ficarem no topo ou invez de lado a lado */
+@media (max-width: 600px) {
+    .column.side, .column.middle, .menu {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header" style="background-color: #708090;">
+  <h2>Mulheres na tecnologia</h2>
+</div>
+
+<div class="row">
+ <div class="column side" style="background-color:#aaa;">
+    <div align="center" class="menu"><a href="index.html"> <img src="ada.jpg" height="40%" width="87%"></a></div>
+    <div align="center" class="menu"><a href="grace.html"><img src="grace.jpg" height="40%" width="87%"></a> </div>
+    <div align="center" class="menu"><a href="margaret.html"><img src="margaret.jpg" height="40%" width="87%"></a> </div>
+    <div align="center" class="menu"><a href="mary.html"><img src="mary.jpg" height="40%" width="87%"></a> </div>
+    </div>
+
+  <div class="column middle" style="background-color:#bbb;"> <h3>MARRY KENNETH KELLER</h3>
+<p align="justified">Mary Kenneth Keller, mais conhecida como Irmã Mary Kenneth Keller, (Cleveland, 17 de dezembro de 1913 - Dubuque, 10 de janeiro de 1985), foi uma importante freira e cientista da computação.</P>
+<p align="justified">Em 7 de junho de 1965, junto de Irving Tang da Universidade Washington em St. Louis, se tornaram os primeiros doutores na área no país, além de ser a primeira mulher a receber um doutorado na área.</p>
+</div>
+  </div>
+
+<div class="footer">
+  <p>by Aline</p>
+</div>
+
+</body>
+</html>
+

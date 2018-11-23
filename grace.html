@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Grace Hopper</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Dimensiona as colunas da página, mantesndo elas responsivas */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo do body*/
+
+body {
+    font-family: "Courier New", Courier, monospace ;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Cria duas colunas iguais que se alinham lado a lado usando o float */
+.column {
+    float: left;
+    padding: 10px;
+    height: 700px; 
+}
+
+/* Coluna Lateral direita*/
+.column.side {
+    width: 25%;
+    height: 700px;
+    padding: 15px;
+}
+
+/* MColuna lateral esquerda */
+.column.middle {
+    width: 75%;
+    background-image: url("grace_bg.jpg");
+}
+
+/* Limpa os elementos flutuantes depois das colunas */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* estilo do rodapé */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Layout responsivo - faz as três colunas ficarem no topo ou invez de lado a lado */
+@media (max-width: 600px) {
+    .column.side, .column.middle, .menu {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header" style="background-color: #708090;">
+  <h2>Mulheres na tecnologia</h2>
+</div>
+
+<div class="row">
+ <div class="column side" style="background-color:#aaa;">
+    <div align="center" class="menu"><a href="index.html"> <img src="ada.jpg" height="40%" width="87%"></a></div>
+    <div align="center" class="menu"><a href="grace.html"><img src="grace.jpg" height="40%" width="87%"></a> </div>
+    <div align="center" class="menu"><a href="margaret.html"><img src="margaret.jpg" height="40%" width="87%"></a> </div>
+    <div align="center" class="menu"><a href="mary.html"><img src="mary.jpg" height="40%" width="87%"></a> </div>
+    </div>
+
+  <div class="column middle" style="background-color:#bbb;">     <h3> GRACE HOPPER</h3>
+<p align="justified">Grace Murray Hopper (Nova Iorque, 9 de dezembro de 1906 — Condado de Arlington, 1 de janeiro de 1992) foi uma analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950 e almirante. Foi ela quem criou a linguagem de programação Flow-Matic, hoje extinta. Esta linguagem serviu como base para a criação do <strong>COBOL</strong>. Ela também foi uma das primeiras programadoras do Harvard Mark I[1] em 1944.</p>
+
+<p align="justified">Dentre outras realizações da almirante está a criação do primeiro compilador, de <strong>COBOL</strong>, sendo a primeira linguagem de programação de computadores a se aproximar da linguagem humana ao invés da linguagem de máquina. Contudo, ela não participou efetivamente na criação da linguagem <strong>COBOL</strong>s mas sim num subcomitê que foi originado de um dos três comitês (o de Curto Prazo) propostos numa reunião no Pentágono em Maio de 1959. Este subcomitê desenvolveu as especificações da linguagem COBOL. Ele era formado por seis pessoas: William Selden e Gertrude Tierney da IBM; Howard Bromberg e Howard Discount da RCA; Vernon Reeves e Jean E. Sammet da Sylvania Electric Products. A concepção de Hopper de que havia a necessidade de se criar uma linguagem orientada para negócios comuns deu origem ao acrônimo <strong>COBOL</strong> <em>(Common Business Oriented Language)</em>.</p>
+
+<p align="justified">Tudo foi feito sem definir os comandos para minimizar melindres entre os técnicos das empresas convocadas a participar da criação de um denominador comum entre todos os fabricantes existentes na época. Grace Hopper participou contribuindo com a abertura dos comandos FLOW-MATIC.</p>
+
+<p align="justified">É dito que é de autoria de Hopper o termo <em>"bug"</em> usado para designar uma falha num código-fonte.</p>
+
+<p align="justified">Surgiu quando Grace tentava achar um problema no seu computador. Quando descobriu o problema, ela percebeu que havia um inseto morto no computador. Desde então o termo bug passou a ser usado.</p>
+
+<p align="justified">Mas existem outras versões que contradizem a origem verdadeira do termo "bug". Uma das versões é de Thomas Edison que casualmente tem muita semelhança com a história da analista. Um inseto que causou problemas de leitura em seu fonógrafo em 1878.</p>
+
+<p align="justified">Em 1998, recebeu a honra de ter seu nome em um navio da Marinha. O contratorpedeiro <em>USS Hopper</em> entrou no serviço ativo em 1998.</p>
+</div>
+  </div>
+
+<div class="footer">
+  <p>By Aline</p>
+</div>
+
+</body>
+</html>
+

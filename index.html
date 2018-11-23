@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Ada Lovelace</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Dimensiona as colunas da página, mantesndo elas responsivas */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo do body*/
+
+body {
+    font-family: "Courier New", Courier, monospace ;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Cria duas colunas iguais que se alinham lado a lado usando o float */
+.column {
+    float: left;
+    padding: 10px;
+    height: 700px;  
+      
+
+}
+
+/* Coluna Lateral direita*/
+.column.side {
+    width: 25%;
+    height: 700px;
+    padding: 15px;
+}
+
+/* MColuna lateral esquerda */
+.column.middle {
+    width: 75%;
+    background-image: url("ada_bg.jpg");
+}
+
+/* Limpa os elementos flutuantes depois das colunas */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* estilo do rodapé */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Layout responsivo - faz as três colunas ficarem no topo ou invez de lado a lado */
+@media (max-width: 600px) {
+    .column.side, .column.middle, .menu {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header" style="background-color: #708090;">
+  <h2>Mulheres na tecnologia</h2>
+</div>
+
+<div class="row">
+ <div class="column side" style="background-color:#aaa;">
+    <div align="center" class="menu"><a href="index.html"> <img src="ada.jpg" height="40%" width="87%"></a></div>
+    <div align="center" class="menu"><a href="grace.html"><img src="grace.jpg" height="40%" width="87%"></a> </div>
+    <div align="center" class="menu"><a href="margaret.html"><img src="margaret.jpg" height="40%" width="87%"></a> </div>
+    <div align="center" class="menu"><a href="mary.html"><img src="mary.jpg" height="40%" width="87%"></a> </div>
+    </div>
+
+  <div class="column middle"> <h3>ADA LOVELACE</h3>
+<p> align="justified">Você já ouviu falar em Ada Lovelace? Ela foi considerada a primeira programadora da história!</p>
+<p align="justified">Desde 2009, sempre na segunda terça-feira do mês de outubro, comemora-se <em> o dia de Ada Lovelace</em>. É uma celebração das conquistas femininas em áreas que até hoje são dominadas por homens, como ciência, tecnologia, engenharia e matemática.</p>
+<p align="justified">O evento foi criado pela britânica Suw Charmam-Anderson, que é tecnóloga social, escritora e jornalista e reúne acontecimentos em todo o mundo.
+<strong>QUEM FOI ADA LOVELACE?</strong></p>
+<p align="justified">Em 1842, Ada se tornou a primeira pessoa a programar (como fazemos hoje com computadores), ao acrescentar algoritmos para funcionamento de uma máquina mecânica.</p>
+<p align="justified">Filha do poeta Lord Byron, a condessa de Lovelace era matemática e contribuiu com a tradução de um artigo científico, acrescentando mais dados ao mesmo. A programadora nasceu em 10 de dezembro de 1815.</p>
+<p align="justified">Incentivada pela mãe, Ada estudou matemática e lógica. Ela colaborou profissionalmente com Charles Babbage no projeto Máquina Analítica, o primeiro computador mecânico.</p>
+<p align="justified">A Ada criava algoritmos para serem processadas pela máquina, o que muitos consideram ser o primeiro software, ou o primeiro programa de computador. Ela escreveu várias notas sobre a máquina analítica e refletia sobre como o indivíduo e a sociedade se relacionam com a tecnologia de forma colaborativa.</p>
+<p align="justified">Se hoje vivemos cercados de tecnologia por todos os lados, devemos um pouco a ela. Ada morreu muito jovem, aos 36 anos, mas estará para sempre na nossa galeria de mulheres inspiradoras.</p></div>
+  </div>
+
+<div class="footer">
+  <p>by Aline</p>
+</div>
+
+</body>
+</html>
+
